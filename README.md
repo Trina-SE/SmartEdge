@@ -22,6 +22,6 @@ Bonus: A hardware design to implement it on camera chips
 - Less aggressive than standard Laplacian sharpening (more natural results)
 - Can be built into camera hardware for real-time processing with very low power
 # Tech Stack: 
-Python, OpenCV, NumPy, Matplotlib
+Python, OpenCV, SciPy, NumPy, Matplotlib
 # Research Paper
 https://ieeexplore.ieee.org/document/11192240

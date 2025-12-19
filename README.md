@@ -25,3 +25,21 @@ Bonus: A hardware design to implement it on camera chips
 Python, OpenCV, SciPy, NumPy, Matplotlib
 # Research Paper
 https://ieeexplore.ieee.org/document/11192240
+
+# How to run
+```bash
+python main.py --input input.jpg --output output.jpg --w 3 --alpha 1
+```
+
+Optional:
+- `--alpha auto` for adaptive alpha*
+- `--w 5` or `--w 7` for larger local window
+
+Modules:
+- `prewitt_gradient.py`: Prewitt gradient magnitude + normalization
+- `contrast.py`: Retinex-inspired contrast φ
+- `c_estimation.py`: ρ map, R set cleanup, c estimate
+- `kernel.py`: Laplacian-like kernel from c
+- `filters.py`: median/max filters, convolution helpers
+- `sharpen.py`: full pipeline
+- `input.py`: image load/save (cv2 or PIL fallback)
